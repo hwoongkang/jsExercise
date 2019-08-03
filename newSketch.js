@@ -4,7 +4,6 @@ var x,y,z;
 
 function setup(){
     paragraph = createP("hwoongkang");
-    alpha = 0;
 }
 function draw(){
     x = accelerationX;
