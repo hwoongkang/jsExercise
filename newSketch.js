@@ -3,7 +3,7 @@ var roll,pitch;
 var x,y,z;
 
 function setup(){
-    paragraph = createP("Leedotype");
+    paragraph = createP("hwoongkang");
     alpha = 0;
 }
 function draw(){
