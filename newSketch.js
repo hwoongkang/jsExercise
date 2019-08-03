@@ -11,6 +11,7 @@ function setup(){
     if(window.DeviceOrientationEvent){
         alert("Supported");
         window.addEventListener("deviceorientation", function(event){
+            this.alert("callback happend")
             x = event.alpha;
             y = event.beta;
             z = event.gamma;
