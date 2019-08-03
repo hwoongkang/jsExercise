@@ -7,7 +7,11 @@ function setup(){
     createCanvas(1920,1080);
     if(window.DeviceOrientationEvent){
         alert("Supported");
-        //window.addEventListener("devicemotion", motion, false);
+        window.addEventListener("deviceorientation", function(event){
+            x = event.alpha;
+            y = event.beta;
+            z = event.gamma;
+        });
       }else{
         alert("DeviceMotionEvent is not supported");
       }
@@ -22,7 +26,5 @@ function draw(){
     paragraph.elt.style['font-variation-settings'] = `"wght" ${mouseX}`;
     */
    background(255)
-   x=accelerationX;
-   y=random();
    text(x.toString(),100,100)
 }
