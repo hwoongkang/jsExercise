@@ -5,6 +5,7 @@ var x,y,z;
 function setup(){
     paragraph = createP("hwoongkang");
     createCanvas(1920,1080);
+    /*
     x=0;
     y=0;
     z=0;
@@ -18,6 +19,7 @@ function setup(){
       }else{
         alert("DeviceMotionEvent is not supported");
       }
+      */
 }
 function draw(){
     
