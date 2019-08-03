@@ -5,6 +5,12 @@ var x,y,z;
 function setup(){
     //paragraph = createP("hwoongkang");
     createCanvas(1920,1080);
+    if(window.DeviceOrientationEvent){
+        alert("Supported");
+        //window.addEventListener("devicemotion", motion, false);
+      }else{
+        alert("DeviceMotionEvent is not supported");
+      }
 }
 function draw(){
     /*
