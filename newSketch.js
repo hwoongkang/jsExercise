@@ -26,7 +26,9 @@ function draw(){
     x = accelerationX;
     y = accelerationY;
     z = accelerationZ;*/
+    background(255);
     roll = atan2(-y,z);
     pitch = atan2(x, sqrt(y*y+z*z));
+    text(roll.toString(),100,100)
     paragraph.elt.style['font-variation-settings'] = `"wght" ${roll}`;
 }
