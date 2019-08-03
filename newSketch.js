@@ -29,6 +29,8 @@ function draw(){
     background(255);
     roll = atan2(-y,z);
     pitch = atan2(x, sqrt(y*y+z*z));
-    text(roll.toString(),100,100)
+    text(x.toString(),80,80)
+    text(y.toString(),100,100)
+    text(z.toString(),120,120)
     paragraph.elt.style['font-variation-settings'] = `"wght" ${roll}`;
 }
