@@ -5,6 +5,9 @@ var x,y,z;
 function setup(){
     //paragraph = createP("hwoongkang");
     createCanvas(1920,1080);
+    x=0;
+    y=0;
+    z=0;
     if(window.DeviceOrientationEvent){
         alert("Supported");
         window.addEventListener("deviceorientation", function(event){
