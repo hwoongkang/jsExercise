@@ -11,6 +11,6 @@ function draw(){
     z = accelerationZ;
     roll = atan2(-y,z);
     pitch = atan2(x, sqrt(y*y+z*z));
-    paragraph.elt.style['font-variation-settings'] = `"wght" ${90+roll}`;
+    paragraph.elt.style['font-variation-settings'] = `"wght" ${mouseX}`;
     
 }
